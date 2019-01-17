@@ -1,4 +1,4 @@
-package com.automatedtest.sample.infrastructure.driver;
+package com.automatedtest.features.infrastructure.driver;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.After;
