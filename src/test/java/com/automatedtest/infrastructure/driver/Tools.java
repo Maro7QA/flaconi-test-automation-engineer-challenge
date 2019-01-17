@@ -1,4 +1,4 @@
-package com.automatedtest.features.infrastructure.driver;
+package com.automatedtest.infrastructure.driver;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.TimeoutException;

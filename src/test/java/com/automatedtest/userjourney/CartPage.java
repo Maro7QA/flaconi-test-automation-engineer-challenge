@@ -1,4 +1,4 @@
-package com.automatedtest.pages;
+package com.automatedtest.userjourney;
 
 import com.automatedtest.basepage.BasePage;
 import org.junit.Assert;

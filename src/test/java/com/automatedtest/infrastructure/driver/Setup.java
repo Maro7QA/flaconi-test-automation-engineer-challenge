@@ -1,4 +1,4 @@
-package com.automatedtest.features.infrastructure.driver;
+package com.automatedtest.infrastructure.driver;
 
 import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;

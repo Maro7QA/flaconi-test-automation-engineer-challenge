@@ -1,1 +1,1 @@
-package com.automatedtest.features;
+package com.automatedtest;

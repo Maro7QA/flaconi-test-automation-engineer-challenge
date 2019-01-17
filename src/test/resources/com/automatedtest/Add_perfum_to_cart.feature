@@ -1,6 +1,7 @@
-Feature: Add Perfum to Cart
+Feature: Testing
 
-  Scenario Outline: Open Home Page
+  @Add_perfum_to_cart
+  Scenario Outline: Add Perfum to Cart
 
     Given The user navigates to Flaconi landing page on market "<Market>"
     When The user closes the cookie message overlay

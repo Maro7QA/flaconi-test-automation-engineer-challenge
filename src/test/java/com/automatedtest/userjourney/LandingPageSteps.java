@@ -1,6 +1,6 @@
-package com.automatedtest.steps;
+package com.automatedtest.userjourney;
 
-import com.automatedtest.pages.LandingPage;
+import com.automatedtest.userjourney.LandingPage;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

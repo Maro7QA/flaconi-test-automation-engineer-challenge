@@ -1,7 +1,7 @@
-package com.automatedtest.features.basepage;
+package com.automatedtest.basepage;
 
-import com.automatedtest.features.infrastructure.driver.Tools;
-import com.automatedtest.features.infrastructure.driver.Setup;
+import com.automatedtest.infrastructure.driver.Tools;
+import com.automatedtest.infrastructure.driver.Setup;
 import org.openqa.selenium.WebDriver;
 
 public class BasePage {

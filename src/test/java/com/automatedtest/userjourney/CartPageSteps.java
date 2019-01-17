@@ -1,6 +1,6 @@
-package com.automatedtest.steps;
+package com.automatedtest.userjourney;
 
-import com.automatedtest.pages.CartPage;
+import com.automatedtest.userjourney.CartPage;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;

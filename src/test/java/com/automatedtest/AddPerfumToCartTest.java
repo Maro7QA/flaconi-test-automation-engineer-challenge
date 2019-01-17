@@ -12,5 +12,5 @@ import org.junit.runner.RunWith;
         glue = {"com.automatedtest.infrastructure.driver",
                 "com.automatedtest.userjourney"})
 
-public class AddPerfumToCart {
+public class AddPerfumToCartTest {
 }
