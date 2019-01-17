@@ -4,7 +4,6 @@ import com.automatedtest.basepage.BasePage;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
@@ -20,9 +19,7 @@ public class LandingPage extends BasePage {
     private By addToCartButton = By.cssSelector("[class='button-primary loaderbox-trigger loaderbox-submit-form']");
     private By cookieMessageBoxCloseButton = By.cssSelector("[class='cookie-box__close']");
 
-    Actions actions = new Actions(driver);
-
-    public LandingPage() {
+    LandingPage() {
         PageFactory.initElements(driver, this);
     }
 

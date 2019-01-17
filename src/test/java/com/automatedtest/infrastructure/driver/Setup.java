@@ -11,7 +11,7 @@ public class Setup {
     public static WebDriver driver;
 
     @Before
-    public void setWebDriver() throws Exception {
+    public void setWebDriver() {
 
         String browser = System.getProperty("browser");
         if (browser == null) {
