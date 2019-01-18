@@ -4,6 +4,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 import org.junit.runner.RunWith;
 
+// Test class to link feature files and test implementation
+
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {"src/test/resources/com/automatedtest/Add_perfum_to_cart.feature"},
         plugin = {"pretty",

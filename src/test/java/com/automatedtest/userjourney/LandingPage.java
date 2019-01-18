@@ -8,9 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
+//// Page elements and input action for cart overlay and cart page
+
 public class LandingPage extends BasePage {
 
     private static final String landingPageURL = "https://www.flaconi.";
+
     private By searchInputField = By.cssSelector("[id='autosuggest-form-header']");
     private By searchButton = By.cssSelector("#autosuggest-form-header > button");
     private By productImage = By.cssSelector("div.product-item-box > a > img");

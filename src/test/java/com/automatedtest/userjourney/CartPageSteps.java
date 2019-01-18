@@ -4,6 +4,8 @@ import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
 
+// Steps for cart overlay and cart page. Should be used to cover more cart page related steps.
+
 public class CartPageSteps {
 
     private CartPage cartPage;

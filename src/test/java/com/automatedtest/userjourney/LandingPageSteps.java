@@ -4,6 +4,8 @@ import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 
+// Steps for landing page, product grid and product detail page.
+
 public class LandingPageSteps {
 
     private LandingPage landingPage;

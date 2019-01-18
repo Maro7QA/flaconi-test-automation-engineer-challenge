@@ -6,6 +6,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+// Utility class to start the browser at the beginning of each test
+
 public class Setup {
 
     public static WebDriver driver;
@@ -17,6 +19,7 @@ public class Setup {
         if (browser == null) {
             browser = "chrome";
         }
+
         switch (browser) {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();

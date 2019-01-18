@@ -7,6 +7,8 @@ import org.openqa.selenium.WebElement;
 
 import java.util.List;
 
+// Page elements and input action for landing page, product grid and product detail page
+
 public class CartPage extends BasePage {
 
     private By viewBagButtonCartOverlay = By.cssSelector("[class='button-secondary pull-right']");
@@ -22,9 +24,9 @@ public class CartPage extends BasePage {
     public boolean productIsDisplayedOnCartPage(String productName) {
         List<WebElement> productArray = driver.findElements(productListOnCart);
         for (WebElement e : productArray) {
-              String[] lineContent = e.getText().split("\\r?\\n");
-              String   productNameCart = lineContent[0];
-            if (productNameCart.contains(productName));
+              String[] lineContent = e.getText().split("\\r?\\n"); // Take line content and create string array based on split by newline
+              String   productNameCart = lineContent[0].replace("- ",""); // Set string for product name  based on index in arrary & remove "- " sign between brand and article name from product name
+            if (productNameCart.contains(productName))
                 return true;
         }
         return false;

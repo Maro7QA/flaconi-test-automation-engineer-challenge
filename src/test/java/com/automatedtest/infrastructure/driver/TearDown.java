@@ -6,6 +6,8 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 
+// Utility class to close the browser after test is completed
+
 public class TearDown {
 
     private WebDriver driver;
