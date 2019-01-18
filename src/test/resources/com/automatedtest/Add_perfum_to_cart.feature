@@ -14,7 +14,6 @@ Feature: Testing
     Then Product "<Perfume>" is displayed on cart page
 
     Examples:
-      | Market | Perfume                            |
+      | Market | Perfume                           |
       | de     | Dolce & Gabbana Light Blue        |
       | at     | Giorgio Armani Acqua di Giò Homme |
-
