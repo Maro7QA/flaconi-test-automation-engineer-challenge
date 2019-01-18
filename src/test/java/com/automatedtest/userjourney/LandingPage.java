@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 
 import java.util.List;
 
-
 public class LandingPage extends BasePage {
 
     private static final String landingPageURL = "https://www.flaconi.";

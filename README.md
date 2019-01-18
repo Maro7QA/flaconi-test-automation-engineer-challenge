@@ -18,8 +18,6 @@ You need to have [Java 8 JDK](https://docs.oracle.com/javase/8/docs/technotes/gu
 
 To run the tests locally with Chrome, install ChromeDriver from (http://chromedriver.chromium.org) and add its location to your system PATH.
 
-To run the tests locally with Firefox, install GeckoDriver from (https://github.com/mozilla/geckodriver/releases) and add its location to your system PATH.
-
 To install all dependencies, run
 
 ```console
@@ -32,7 +30,7 @@ $ mvn clean install
 $ mvn test
 ```
 
-By default, tests will run on Chrome. To change that, specify `-Dbrowser={browser}` where `{browser}` is either `chrome` or `firefox`.
+By default, tests will run on Chrome. 
 
 You can also select specific scenarios to execute using `-Dcucumber.options="--tags @your_tag"`.
 
