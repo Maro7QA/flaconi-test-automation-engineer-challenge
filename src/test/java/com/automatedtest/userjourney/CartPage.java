@@ -37,14 +37,4 @@ public class CartPage extends BasePage {
     public void verifyCartPageIsShown() {
         Assert.assertTrue(tools.forPresenceOfElements(10,cartBody,"Cart page"));
     }
-
-    public boolean selectedProductByIndexIsShownOnCartPage() {
-        List<WebElement> productArray = driver.findElements(productListOnCart);
-
-        for (WebElement e : productArray) {
-            if (e.getAttribute("data-sku").contains(""))
-                return true;
-        }
-        return false;
-    }
 }

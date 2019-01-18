@@ -1,6 +1,5 @@
 package com.automatedtest.userjourney;
 
-import cucumber.api.PendingException;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
 import org.junit.Assert;
@@ -31,11 +30,5 @@ public class CartPageSteps {
     @Then("^The cart page is shown to the user$")
     public void theCartPageIsShownToTheUser() {
         this.cartPage.verifyCartPageIsShown();
-
-    }
-
-    @Then("^The previously selected product by index is shown on cart page$")
-    public void thePreviouslySelectedProductByIndexIsShownOnCartPage() {
-        this.cartPage.selectedProductByIndexIsShownOnCartPage();
     }
 }

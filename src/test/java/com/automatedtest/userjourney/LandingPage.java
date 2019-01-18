@@ -56,22 +56,4 @@ public class LandingPage extends BasePage {
             driver.findElement(cookieMessageBoxCloseButton).click();
         }
     }
-
-    public void selectFirstProductOfTheGridFromProductGrid() {
-        driver.findElements(productImage).get(0).click();
-    }
-
-    public void selectProductSizeByIndex(int index) {
-        tools.forPresenceOfElements(10,productList,"Product list is not shown!");
-        driver.findElements(addToCartButton).get(index).click();
-    }
-
-    public String getDataSkuOfProduct(int index) {
-        List<WebElement> productListArray = driver.findElements(productList);
-        for (WebElement e : productListArray) {
-           return e.findElements(purchasePanel).get(index).getAttribute("data-sku");
-
-        }
-        return null;
-    }
 }
