@@ -18,7 +18,6 @@ public class LandingPage extends BasePage {
     private By productList = By.cssSelector("[class='product-list']");
     private By addToCartButton = By.cssSelector("[class='button-primary loaderbox-trigger loaderbox-submit-form']");
     private By cookieMessageBoxCloseButton = By.cssSelector("[class='cookie-box__close']");
-    private By purchasePanel = By.cssSelector("#purchasepanel > ul > li ");
 
     LandingPage() {
         PageFactory.initElements(driver, this);
