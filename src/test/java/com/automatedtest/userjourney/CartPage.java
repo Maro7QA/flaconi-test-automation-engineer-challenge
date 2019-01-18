@@ -47,4 +47,5 @@ public class CartPage extends BasePage {
         }
         return false;
     }
+
 }
