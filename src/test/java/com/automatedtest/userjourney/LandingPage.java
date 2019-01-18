@@ -18,6 +18,7 @@ public class LandingPage extends BasePage {
     private By productList = By.cssSelector("[class='product-list']");
     private By addToCartButton = By.cssSelector("[class='button-primary loaderbox-trigger loaderbox-submit-form']");
     private By cookieMessageBoxCloseButton = By.cssSelector("[class='cookie-box__close']");
+    private By purchasePanel = By.cssSelector("#purchasepanel > ul > li ");
 
     LandingPage() {
         PageFactory.initElements(driver, this);
@@ -36,9 +37,9 @@ public class LandingPage extends BasePage {
 
     public void userSelectsProductFromProductGrid(String productName) {
         List<WebElement> productImageArray = driver.findElements(productImage);
-        for (WebElement i : productImageArray) {
-            if (i.getAttribute("title").contains(productName)) {
-                i.click();
+        for (WebElement e : productImageArray) {
+            if (e.getAttribute("title").contains(productName)) {
+                e.click();
                 return;
             }
         }
@@ -54,5 +55,23 @@ public class LandingPage extends BasePage {
         if (tools.forPresenceOfElements(10, cookieMessageBoxCloseButton, "Cookie message box")) {
             driver.findElement(cookieMessageBoxCloseButton).click();
         }
+    }
+
+    public void selectFirstProductOfTheGridFromProductGrid() {
+        driver.findElements(productImage).get(0).click();
+    }
+
+    public void selectProductSizeByIndex(int index) {
+        tools.forPresenceOfElements(10,productList,"Product list is not shown!");
+        driver.findElements(addToCartButton).get(index).click();
+    }
+
+    public String getDataSkuOfProduct(int index) {
+        List<WebElement> productListArray = driver.findElements(productList);
+        for (WebElement e : productListArray) {
+           return e.findElements(purchasePanel).get(index).getAttribute("data-sku");
+
+        }
+        return null;
     }
 }

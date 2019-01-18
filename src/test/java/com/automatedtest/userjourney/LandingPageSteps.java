@@ -1,5 +1,6 @@
 package com.automatedtest.userjourney;
 
+import cucumber.api.PendingException;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -35,5 +36,14 @@ public class LandingPageSteps {
     @When("^The user closes the cookie message overlay$")
     public void theUserClosesTheCookieMessageOverlay() {
         this.landingPage.closeCookieMessageBox();
+    }
+
+    @When("^The user selects first product from product gird$")
+    public void theUserSelectsFirstProductFromProductGird() {
+        this.landingPage.selectFirstProductOfTheGridFromProductGrid();
+    }
+
+    @When("^The user selects size on product detail page by index \"([^\"]*)\"$")
+    public void theUserSelectsSizeOnProductDetailPageByIndex(String index) {
     }
 }
