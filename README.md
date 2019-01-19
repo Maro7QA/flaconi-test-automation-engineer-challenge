@@ -8,6 +8,10 @@ The test scenario covers to the following user journey:
 3. user adds perfume to cart
 4. verify perfume is shown on cart page
 
+Bonus Points:
+Provide a Dockerfile or container for packaging the necessary dependencies to run the tests.
+Create an entrypoint for your Docker container which runs the test.
+
 
 Test scenario is described in feature file "Add_perfum_to_cart" located here ./src/test/resources/com/automatedtest.
 
@@ -35,5 +39,15 @@ $ mvn test
 By default, tests will run on Chrome. To change that, specify `-Dbrowser={browser}` where `{browser}` is either `chrome` or `firefox`.
 
 You can also select specific scenarios to execute using `-Dcucumber.options="--tags @your_tag"`.
+
+## Bonus Docker ##
+
+Dockerfile is located here ./. 
+
+```console
+$ docker build ./
+
+```
+
 
 
