@@ -42,7 +42,7 @@ You can also select specific scenarios to execute using `-Dcucumber.options="--t
 
 ## Bonus Docker ##
 
-Dockerfile is located here ./. 
+Dockerfile is located here ./. To build docker image, run
 
 ```console
 $ docker build ./
